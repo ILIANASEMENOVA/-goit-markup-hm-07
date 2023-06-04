@@ -48,8 +48,12 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-open-button">
-          <svg class="mobile-open-button-icon" width="32" height="22">
+        <button type="button" class="mobile-open-button" aria-expanded="false">
+          <svg
+            class="mobile-open-button-icon js-open-menu"
+            width="32"
+            height="22"
+          >
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
@@ -69,48 +73,54 @@
           </ul>
         </address>
       </div>
-      <div class="mobile-menu">
-        <div class="container mobile-menu-container">
-          <button class="mobile-menu-close-btn">
-            <svg class="mobile-menu-close-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close-black"></use>
-            </svg>
-          </button>
-          <ul class="site-nav-list-mobile link list">
-            <li class="menu-item-mobile">
-              <a href="./index.html" class="link menu-item-link-mobile current-mobile"
-                >Studio</a
-              >
-            </li>
-            <li class="menu-item-mobile">
-              <a href="./portfolio.html" class="link menu-item-link-mobile"
-                >Portfolio</a
-              >
-            </li>
-            <li class="menu-item-mobile">
-              <a href="" class="link menu-item-link-mobile">Contacts</a>
-            </li>
-          </ul>
+
+      <div class="mobile-menu-container js-menu-container">
+        <button class="mobile-menu-close-btn">
+          <svg
+            class="mobile-menu-close-icon js-close-menu"
+            width="8"
+            height="8"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="site-nav-list-mobile link list">
+          <li class="menu-item-mobile">
+            <a
+              href="./index.html"
+              class="link menu-item-link-mobile current-mobile"
+              >Studio</a
+            >
+          </li>
+          <li class="menu-item-mobile">
+            <a href="./portfolio.html" class="link menu-item-link-mobile"
+              >Portfolio</a
+            >
+          </li>
+          <li class="menu-item-mobile">
+            <a href="" class="link menu-item-link-mobile">Contacts</a>
+          </li>
+        </ul>
+
+        <div class="contact-and-social-list-mobile">
           <address class="contact-mobile link">
-            <div class="contact-wrapper">
-              <ul class="contact-nav-list-mobile list">
+            <ul class="contact-nav-list-mobile list">
               <li class="adress-item-mobile contacts-item-mobile-tel">
-                <a href="tel:+110001111111" class="contacts-link-mobile link "
+                <a href="tel:+110001111111" class="contacts-link-mobile link"
                   >+11 (000) 111-11-11</a
                 >
               </li>
               <li class="adress-item-mobile">
-                <a href="mailto:info@devstudio.com" class="contacts-link-mobile link"
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-link-mobile link"
                   >info@devstudio.com</a
                 >
               </li>
-              
             </ul>
-          </div>
-            
           </address>
-          <div class="social-list-container-mobile">
-            <ul class="social-list-mobile list">
+
+          <ul class="social-list-mobile list">
             <li class="social-list-item">
               <a href="" class="social-list-link">
                 <svg
@@ -164,25 +174,22 @@
             </li>
           </ul>
         </div>
-          
-        </div>
       </div>
     </header>
 
-
-
-    <!-- герой cекция 1
+    <!-- герой cекция 1 -->
     <main>
-      <section class="hero-solutions">
+      <section class="hero-solutions box">
         <div class="container">
+          
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="modal-open-button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
-      <!-- секция 2
+      <!-- секция 2 -->
       <section class="section">
         <div class="container">
           <h2 class="section-tittle security">list of benefits</h2>
@@ -238,10 +245,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- секція 3
-      <section class="section no-padding">
+      <!-- секція 3 -->
+      <section class="section no-padding section-servises">
         <div class="container">
           <h2 class="section-tittle">What are we doing</h2>
           <ul class="list servises">
@@ -256,9 +263,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- секція 4
+      <!-- секція 4 -->
       <section class="section background-section-our-team">
         <div class="container">
           <h2 class="section-tittle">Our Team</h2>
@@ -266,12 +273,14 @@
             <li class="cards-team">
               <img
                 class="image-team"
-                src="./images/img(5).jpg"
+                srcset="./images/img-mark.jpg 1x, ./images/img-mark@2x.jpg 2x"
+
+                src="./images/img-mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
               <div class="team-list-text-conteiner">
-                <h3 class="title title-benefits">Mark Guerrero</h3>
+                <h3 class="title title-team-name">Mark Guerrero</h3>
                 <p class="text employees-list-text">Product Designer</p>
                 <ul class="social-list list">
                   <li class="social-list-item">
@@ -331,12 +340,13 @@
             <li class="cards-team">
               <img
                 class="image-team"
-                src="./images/img3.jpg"
+                srcset="./images/img-tom.jpg 1x, ./images/img-tom@2x.jpg 2x "
+                src="./images/img-tom.jpg"
                 alt="Tom Ford"
                 width="264"
               />
               <div class="team-list-text-conteiner">
-                <h3 class="title title-benefits">Tom Ford</h3>
+                <h3 class="title title-team-name">Tom Ford</h3>
                 <p class="text employees-list-text">Frontend Developer</p>
                 <ul class="social-list list">
                   <li class="social-list-item">
@@ -396,12 +406,13 @@
             <li class="cards-team">
               <img
                 class="image-team"
-                src="./images/img2.jpg"
+                srcset="./images/img-camila.jpg 1x, ./images/img-camila@2x.jpg"
+                src="./images/img-camila.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
               <div class="team-list-text-conteiner">
-                <h3 class="title title-benefits">Camila Garcia</h3>
+                <h3 class="title title-team-name">Camila Garcia</h3>
                 <p class="text employees-list-text">Marketing</p>
                 <ul class="social-list list">
                   <li class="social-list-item">
@@ -461,12 +472,13 @@
             <li class="cards-team">
               <img
                 class="image-team"
-                src="./images/img1.jpg"
+                srcset="./images/img-dan.jpg 1x, ./image/img-dan@2x.jpg 2x"
+                src="./images/img-dan.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
               <div class="team-list-text-conteiner">
-                <h3 class="title title-benefits">Daniel Wilson</h3>
+                <h3 class="title title-team-name">Daniel Wilson</h3>
                 <p class="text employees-list-text">UI Designer</p>
                 <ul class="social-list list">
                   <li class="social-list-item">
@@ -525,9 +537,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- секція 5
+      <!-- секція 5 -->
       <section class="section">
         <div class="container">
           <h2 class="section-tittle">Customers</h2>
@@ -602,9 +614,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- футер
+    <!-- футер -->
     <footer class="footer-content">
       <div class="container footer-container">
         <div class="logo-paragraf-footer">
@@ -699,9 +711,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- модельне вікно
+    <!-- модельне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -833,5 +845,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
-</html> -->
+</html>
