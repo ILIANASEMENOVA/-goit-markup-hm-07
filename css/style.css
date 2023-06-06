@@ -1220,6 +1220,15 @@ align-items: center;
       margin-left: 80px;
     } 
     
+    .portfolio {
+      padding: 96px 0 120px;
+    }
+    .work-examples {
+      display: flex;
+      gap: 48px 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 }
 
 
