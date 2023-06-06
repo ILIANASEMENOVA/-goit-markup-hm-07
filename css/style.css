@@ -96,6 +96,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    
   }
 }
 
@@ -595,7 +596,7 @@ margin-bottom: 72px;
 }
 .work-examples {
   display: flex;
-  gap: 48px 24px;
+  gap: 48px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -1000,6 +1001,7 @@ margin-bottom: 72px;
 
 
 @media screen  and (min-width: 768px){
+  .container{ margin: 0 auto;}
   .mobile-menu-container{display: none;}
   .mobile-open-button{display: none;}
   .site-nav-list{display: flex;
@@ -1125,6 +1127,18 @@ margin-right: auto;}
   display: block;
 }
 
+.button-list{
+ 
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 64px;
+  border-radius: 4px;
+}
+.work-examples {
+  display: flex;
+  gap: 72px 24px;
+}
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -1132,8 +1146,78 @@ margin-right: auto;}
     max-width: 1158px;
     padding: 0 15px;
   }
+  .address-contact {
+    display: flex;
+    align-items: center;
+     gap: 40px;
 }
 
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  margin-bottom: 48px;
+  max-width: 496px;
+  
+}
+
+ .benefits-icon {
+    display: flex;
+align-items: center;
+ justify-content: center;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: #f4f4fd;
+    padding: 24px 100px 24px 100px;
+    padding: 32px 0;
+  }
+  .section-servises{display: flex;}
+  .servises {
+    display: flex;
+    gap: 24px;
+  }
+
+  .hero-solutions {
+   
+    padding-top: 188px;
+    padding-bottom: 188px;
+  
+    max-width: 1440px;
+
+  } 
+  .customes-list-item {
+    width: calc((100% - 120px) / 6);}
+    .benefits-list {
+      flex-basis: calc((100% - 72px) / 3);
+      
+    }
+    .benefits{flex-wrap: nowrap;}
+    .section-team {
+      padding-top: 0;
+      padding-bottom: 120px;
+    } 
+    .team{flex-wrap: nowrap;}
+    .customers-container{width: 100%;
+    }
+
+    .footer-content {
+      display:flex;
+      padding: 100px 0;
+    }
+    .footer-container {
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+      column-gap: normal;
+      flex-wrap: nowrap;
+    } 
+    .logo-paragraf-footer {
+      margin-right: 120px;
+    }
+    .item-footer-navigation {
+      margin-left: 80px;
+    } 
+}
 
 
 
