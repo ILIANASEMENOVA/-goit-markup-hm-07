@@ -98,12 +98,7 @@ body {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-}
+
 
 @media screen and (max-width:427) {
   .modal{min-width: 95vw;}
@@ -132,7 +127,7 @@ body {
   display: none;
 }
 
-.contact-nav-list {
+.contact {
   display: none;
 }
 
@@ -1010,6 +1005,7 @@ margin-bottom: 72px;
   .site-nav-list{display: flex;
     gap: 40px;
   }
+  .contact{display: block;}
   .contact-nav-list{ 
     display: block;
      font-weight: 400;
@@ -1086,20 +1082,56 @@ margin-bottom: 72px;
 }
 .title-benefits{text-align: left;}
 .customers-list{gap: 24px;}
-.customers-list-item{
-  width: calc((100% - 48px) / 4);
-  height: 88px;
+
+
+.customes-list-item{
+  width: calc((100% - 48px) / 3);
+  
 
 }
 .footer-container{ 
   width: 552px;
- 
+ margin-left: auto;
+ margin-right: auto;
   flex-wrap: wrap;
   column-gap: 24px;
- 
+  flex-direction: row;
+}
+.logo-paragraf-footer{display: block;
+}
+.social-footer-link{display: block; }
 
+.footer-form-subscribe{ display: flex;
+column-gap: 24px;
+width: 100%;}
+.footer-form-button{margin-top: 0;
+display: flex;}
+.footer-form-text{text-align: left;}
+
+.customers-container{width: 552px;
+margin-left: auto;
+margin-right: auto;}
+
+
+
+
+.form-input-footer {
+  width: 264px;
+ 
+} 
+.page-header {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: block;
+}
 
 }
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 
