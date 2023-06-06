@@ -1002,6 +1002,8 @@ margin-bottom: 72px;
 
 @media screen  and (min-width: 768px){
   .container{ margin: 0 auto;}
+  .section{padding-top: 120px;
+  padding-bottom: 120px;}
   .mobile-menu-container{display: none;}
   .mobile-open-button{display: none;}
   .site-nav-list{display: flex;
@@ -1193,7 +1195,7 @@ align-items: center;
     }
     .benefits{flex-wrap: nowrap;}
     .section-team {
-      padding-top: 0;
+     
       padding-bottom: 120px;
     } 
     .team{flex-wrap: nowrap;}
@@ -1217,6 +1219,7 @@ align-items: center;
     .item-footer-navigation {
       margin-left: 80px;
     } 
+    
 }
 
 
